@@ -7,11 +7,12 @@ var wins = 0;
 var losses = 0;
 
 //Assigning the magic number to match.
-$(".magic").html("The magic number to match is: " + magicNumber);
+$("#magic").html("The magic number to match is: " + magicNumber);
 
 //function to reset game on win or loss.
 function reset() {
     magicNumber = Math.floor(Math.random() * 150 + 1) + 65;
+    document.getElementById('magic').innerHTML = "The magic number to match is: " + magicNumber;
     iconNumber1 = Math.floor(Math.random() * 20 + 10);
     iconNumber2 = Math.floor(Math.random() * 5) + 1;
     iconNumber3 = Math.floor(Math.random() * 20 + 1) + 5;
