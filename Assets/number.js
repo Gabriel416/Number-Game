@@ -12,7 +12,6 @@ $("#magic").html("The magic number to match is: " + magicNumber);
 //function to reset game on win or loss.
 function reset() {
     magicNumber = Math.floor(Math.random() * 150 + 1) + 65;
-    document.getElementById('magic').innerHTML = "The magic number to match is: " + magicNumber;
     iconNumber1 = Math.floor(Math.random() * 20 + 10);
     iconNumber2 = Math.floor(Math.random() * 5) + 1;
     iconNumber3 = Math.floor(Math.random() * 20 + 1) + 5;
@@ -35,6 +34,7 @@ $("#logo1").click(function bunny() {
     }
     document.getElementById('win').innerHTML = "Wins: " + wins;
     document.getElementById('loss').innerHTML = "losses: " + losses;
+    document.getElementById('magic').innerHTML = "The magic number to match is: " + magicNumber;
 
 })
 
@@ -52,6 +52,7 @@ $("#logo2").click(function wand() {
     }
     document.getElementById('win').innerHTML = "Wins: " + wins;
     document.getElementById('loss').innerHTML = "losses: " + losses;
+    document.getElementById('magic').innerHTML = "The magic number to match is: " + magicNumber;
 
 })
 
@@ -69,6 +70,7 @@ $("#logo3").click(function wizard() {
     }
     document.getElementById('win').innerHTML = "Wins: " + wins;
     document.getElementById('loss').innerHTML = "losses: " + losses;
+    document.getElementById('magic').innerHTML = "The magic number to match is: " + magicNumber;
 
 })
 
