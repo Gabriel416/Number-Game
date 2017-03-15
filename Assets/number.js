@@ -1,6 +1,6 @@
 var magicNumber = Math.floor(Math.random() * 150 + 1) + 70;
 var iconNumber1 = Math.floor(Math.random() * 20 + 10);
-var iconNumber2 = Math.floor(Math.random() * 5) + 1;
+var iconNumber2 = Math.floor(Math.random() * 2) + 1;
 var iconNumber3 = Math.floor(Math.random() * 20 + 1) + 5;
 var score = 0;
 var wins = 0;
